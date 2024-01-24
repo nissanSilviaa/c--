@@ -1,0 +1,28 @@
+def average(numbers):
+
+    if not numbers:
+        return None  
+
+
+    total = sum(numbers)
+    avg = total / len(numbers)
+    return avg
+
+numbers = [5, 10, 15, 20, 25]
+
+
+result = average(numbers)
+
+
+if result is not None:
+
+    print("The average is:", result)
+
+
+    if result > 10:
+        print("Double digits")
+    else:
+        print("Single digits")
+else:
+    print("The array is empty, cannot calculate the average.")
+
